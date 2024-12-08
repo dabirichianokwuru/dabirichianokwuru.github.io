@@ -11,7 +11,7 @@ function handleSubmit(event) {
   const email = document.getElementById("email").value;
   const message = document.getElementById("message").value;
 
-  // Basic validation
+  //validation
   if (!validateForm(name, email, message)) {
     return;
   }

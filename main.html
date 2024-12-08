@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dabirichi Anokwuru - Portfolio</title>
     <link rel="stylesheet" href="styles.css" />
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script defer src="contact.js"></script>
   </head>
   <body>
     <!--Fixed Navigation-->
@@ -195,14 +197,26 @@
         <h2>Contact</h2>
         <div class="contact-content">
           <div class="form-container">
-            <form action="" method="post" class="contact-form">
+            <form class="contact-form">
               <div class="form-group">
                 <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required />
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  placeholder="Full Name"
+                  required
+                />
               </div>
               <div class="form-group">
                 <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required />
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="name@example.com"
+                  required
+                />
               </div>
               <div class="form-group">
                 <label for="message">Message:</label>
@@ -210,6 +224,7 @@
                   id="message"
                   name="message"
                   rows="5"
+                  placeholder="enter message here"
                   required
                 ></textarea>
               </div>
@@ -237,7 +252,13 @@
               >
                 <i class="fab fa-github"></i> GitHub
               </a>
-              <a href="dabirichiblaise@gmail.com">My Email</a>
+              <a
+                href="mailto:dabirichiblaise@gmail.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i class="fas fa-envelope"></i> dabirichiblaise@gmail.com
+              </a>
             </div>
           </div>
         </div>

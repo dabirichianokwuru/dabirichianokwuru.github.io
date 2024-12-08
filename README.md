@@ -21,7 +21,7 @@ This single-page website features:
 ## Setup and Installation
 
 1. Clone the repository:
-   git clone https://github.com/[dabirichiblaise]/[dabirichiblaise.github.io].git
+   git clone https://github.com/dabirichiblaise/dabirichiblaise.github.io.git
 2. Open main.html in your web browser to view the site locally
 
 ## Deployment
