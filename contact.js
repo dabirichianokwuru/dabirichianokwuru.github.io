@@ -7,6 +7,7 @@ const handleSubmit = async (event) => {
   event.preventDefault();
 
   // Get form data
+  const form = event.target;
   const name = document.getElementById("name").value;
   const email = document.getElementById("email").value;
   const message = document.getElementById("message").value;
@@ -36,8 +37,6 @@ const handleSubmit = async (event) => {
       // Check for successful response
       showMessage("Message sent successfully!");
       form.reset();
-    } else {
-      throw new Error("Failed to send");
     }
   } catch (error) {
     showMessage("Failed to send message. Please try again.");
