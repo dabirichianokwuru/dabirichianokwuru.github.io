@@ -26,7 +26,7 @@ This single-page website features:
 
 ## Deployment
 
-This site is deployed using GitHub Pages and can be accessed at: [add deployment url once set up]
+This site is deployed using GitHub Pages and can be accessed at: https://dabirichiblaise.github.io/
 
 ## Outside Resources Used
 
