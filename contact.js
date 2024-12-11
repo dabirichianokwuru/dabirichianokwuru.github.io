@@ -26,9 +26,19 @@ const handleSubmit = async (event) => {
   };
 
   try {
-    await emailjs.send("service_f7mrv6u", "template_hz0qr0c", templateParams);
-    showMessage("Message sent successfully!");
-    form.reset();
+    const response = await emailjs.send(
+      "service_f7mrv6u",
+      "template_hz0qr0c",
+      templateParams
+    );
+
+    if (response.status === 200) {
+      // Check for successful response
+      showMessage("Message sent successfully!");
+      form.reset();
+    } else {
+      throw new Error("Failed to send");
+    }
   } catch (error) {
     showMessage("Failed to send message. Please try again.");
     console.log("FAILED...", error);
