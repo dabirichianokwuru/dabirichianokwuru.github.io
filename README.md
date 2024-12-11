@@ -17,6 +17,7 @@ This single-page website features:
 - HTML
 - CSS
 - Javascript
+- EmailJS
 
 ## Setup and Installation
 
